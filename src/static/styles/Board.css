@@ -1,0 +1,82 @@
+.Board {
+  position: relative;
+  margin: 0 auto 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.Board-item {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: white;
+  z-index: 100;
+  transition: all 0.15s ease-in-out;
+}
+
+.item-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  border-top: solid 8px #bbbed3;
+}
+
+.item-container img {
+  width: 80px;
+}
+
+.Board .Board-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.option-paper {
+  margin: 0 40px 40px 0;
+  box-shadow: 0 10px 0 #2945c2;
+  background: hsl(230, 89%, 62%);
+}
+
+.option-scissor {
+  margin: 0 0 40px 40px;
+  box-shadow: 0 10px 0 #c76c1b;
+  background: hsl(39, 89%, 49%);
+}
+
+.option-rock {
+  margin: 40px 0 0 0;
+  box-shadow: 0 10px 0 #a01735;
+  background: #df405e;
+}
+
+.line {
+  width: 13px;
+  height: 300px;
+  position: absolute;
+  background: #16223e;
+}
+
+.line1 {
+  left: 180px;
+  bottom: 20px;
+  transform: rotate(-30deg);
+}
+
+.line2 {
+  transform: rotate(90deg);
+  top: -50px;
+}
+
+.line3 {
+  right: 180px;
+  bottom: 20px;
+  transform: rotate(30deg);
+}

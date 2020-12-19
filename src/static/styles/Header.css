@@ -1,0 +1,39 @@
+.Header {
+  margin: 30px auto;
+  padding: 30px;
+  display: flex;
+  border: 2px solid hsl(217, 16%, 45%);
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.Header-title {
+  line-height: 35px;
+  font-size: 2.2rem;
+}
+
+.Header-score {
+  padding: 15px 0;
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: white;
+}
+
+.Header-score p {
+  font-size: 1.6rem;
+  color: hsl(229, 64%, 46%);
+  letter-spacing: 2px;
+}
+
+.Header-score h2 {
+  color: #56546a;
+  font-size: 6rem;
+}
