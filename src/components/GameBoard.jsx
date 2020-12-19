@@ -7,6 +7,7 @@ import getRandomNumber from "../lib/getRandomNumber";
 import chooseWinner from "../lib/chooseWinner";
 
 import "../static/styles/GameBoard.css";
+import loadingGif from "../static/images/loading.gif";
 
 const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
   const [isThinking, setIsThinking] = useState(true);
@@ -92,12 +93,8 @@ const GameBoard = ({ userPick, addScore, setIsPlaying }) => {
       <div className="house-pick">
         <h2 className="pick-title">THE HOUSE PICKED</h2>
         {isThinking ? (
-          <div className="house-pick-option">
-            <img
-              className="brain-thinking"
-              src="https://lh3.googleusercontent.com/proxy/X9NoHuO-GD0YpL4SagWIUmRNY9wyRCyMwpocStHFuVYPm4-9tU3PZPguHU9M-XWSNV4uxGQyNFbYAHf0ng35TuRaF8z2MinClIlHxFWAgNjw3YaPanBu8XRGsFEbnRuNTa6pZzp-R8W5aYDth8XTk9NmX1A0pdQAo09GOg"
-              alt="Thinking..."
-            />
+          <div className="house-pick-option glow">
+            <img className="" src={loadingGif} alt="Thinking..." />
           </div>
         ) : (
           <div className="user-pick">
