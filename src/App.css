@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: rgb(31, 55, 86);
+  background: radial-gradient(
+    circle,
+    rgba(31, 55, 86, 1) 3%,
+    rgba(20, 21, 57, 1) 100%
+  );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ReactModal__Overlay--after-open {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.ReactModal__Content--after-open {
+  position: static !important;
+  max-width: 400px !important;
+  border-radius: 8px !important;
+  padding: 30px !important;
+}
+
+.rules-button:hover {
+  background: white;
+  color: black;
+}
+
+.modal-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close {
+  font-size: 2.4rem;
+  color: #424566;
+  cursor: pointer;
+}
+
+.modal-header h1 {
+  font-size: 3.2rem;
+  color: #424566;
+}
+
+.rules-button,
+.credits {
+  position: absolute;
+  border-radius: 12px;
+}
+
+.rules-button {
+  padding: 10px;
+  bottom: 50px;
+  right: 30px;
+  width: 150px;
+  border: 1px solid white;
   color: white;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.credits {
+  padding: 5px;
+  bottom: 10px;
+  right: 30px;
+  background: white;
+  font-size: 1.2rem;
 }
