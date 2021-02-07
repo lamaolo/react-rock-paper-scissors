@@ -2,4 +2,4 @@
 
 Mi solución al reto de [FrontendMentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH), donde se debe crear una versión del clásico juego.
 
-[Live View](https://react-rock-paper-scissors.web.app/)
+[Live View](https://react-rock-paper-scissors.lamaolo.vercel.app/)
